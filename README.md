@@ -1,6 +1,6 @@
 # AJMAYEN FAYEK - Portfolio
+![Screenshot 2025-03-25 012219](https://github.com/user-attachments/assets/d26fffa4-dda6-40a2-a4cf-4a892dd9bb8d)
 
-![Portfolio Screenshot](screenshots/portfolio-screenshot.png)
 
 A dynamic and visually appealing portfolio website showcasing my skills, projects, and contact information. Built with HTML, CSS, and JavaScript, this portfolio features a space-themed design with interactive elements, a responsive layout, and a professional look to highlight my journey as a software engineering student.
 
@@ -8,7 +8,8 @@ A dynamic and visually appealing portfolio website showcasing my skills, project
 - [Overview](#overview)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Setup](#setup)
+- [Setup](#setup)![Uploading Screenshot 2025-03-25 012219.png…]()
+
 - [Usage](#usage)
 - [Customization](#customization)
 - [Screenshots](#screenshots)
