@@ -12,7 +12,8 @@ A dynamic and visually appealing portfolio website showcasing my skills, project
 - [Overview](#overview)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- ![AA](https://github.com/user-attachments/assets/71c9e4e7-d1bb-4d36-a909-c5db50e5d820)
+- ![A2](https://github.com/user-attachments/assets/1ff769b3-921a-4bc1-b42d-cfbd9c51777b)
+
 
 
 - [Usage](#usage)
