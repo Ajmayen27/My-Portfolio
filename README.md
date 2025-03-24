@@ -1,5 +1,9 @@
 # AJMAYEN FAYEK - Portfolio
 ![Screenshot 2025-03-25 012219](https://github.com/user-attachments/assets/d26fffa4-dda6-40a2-a4cf-4a892dd9bb8d)
+![Screenshot 2025-03-25 012241](https://github.com/user-attachments/assets/00ed3e14-ce75-49ea-b05a-85955aaddc69)
+![Screenshot 2025-03-25 012808](https://github.com/user-attachments/assets/e952eb3a-5d18-40b3-aff6-9b623303ad0d)
+![Screenshot 2025-03-25 012831](https://github.com/user-attachments/assets/7381aa9e-4289-4224-b32f-d601e08993a1)
+
 
 
 A dynamic and visually appealing portfolio website showcasing my skills, projects, and contact information. Built with HTML, CSS, and JavaScript, this portfolio features a space-themed design with interactive elements, a responsive layout, and a professional look to highlight my journey as a software engineering student.
