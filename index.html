@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJMAYEN FAYEK - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Devicon for colorful logos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css">
+    <!-- Google Fonts: Orbitron and Montserrat -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Space Background -->
+    <div class="space-background">
+        <div class="stars stars-fast"></div>
+        <div class="stars stars-medium"></div>
+        <div class="stars stars-slow"></div>
+        <div class="nebula"></div>
+        <div class="planet planet-red"></div>
+        <div class="planet planet-blue"></div>
+        <div class="planet planet-purple"></div>
+        <div class="comet comet-1"></div>
+        <div class="comet comet-2"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sections -->
+    <section id="about">
+        <img src="ajmayen.jpg" alt="Profile Picture" class="profile-pic">
+        <h1>AJMAYEN FAYEK</h1>
+        <h3>Bsc. in Software Engineering</h3>
+        <h4>Daffodil International University, Savar, Dhaka, Bangladesh</h4>
+        <br>
+        <p>I am a passionate software engineering student specializing in Java, with a strong focus on the Spring Boot
+            framework and PostgreSQL. My journey in software development is driven by a deep enthusiasm for coding and a
+            commitment to continuous learning. I thrive on the challenge of adapting to new technologies and enjoy
+            exploring innovative solutions to complex problems. Whether working on backend systems or exploring new tech
+            stacks, I am dedicated to building efficient and scalable software.</p>
+    </section>
+
+    <section id="skills">
+        <h1>Technical Skills</h1>
+        <div class="skills-category">
+            <h2>Programming Knowledge</h2>
+            <div class="skills-container">
+                <div class="skill"><i class="devicon-java-plain colored"></i> Java</div>
+                <div class="skill"><i class="devicon-c-plain colored"></i> C</div>
+                <div class="skill"><i class="devicon-javascript-plain colored"></i> Javascript</div>
+            </div>
+        </div>
+        <div class="skills-category">
+            <h2>Frameworks</h2>
+            <div class="skills-container">
+                <div class="skill"><i class="devicon-spring-plain colored"></i> Spring Boot</div>
+                <div class="skill"><i class="devicon-angularjs-plain colored"></i> Angular</div>
+            </div>
+        </div>
+        <div class="skills-category">
+            <h2>Database Management</h2>
+            <div class="skills-container">
+                <div class="skill"><i class="devicon-postgresql-plain colored"></i> PostgreSQL</div>
+                <div class="skill"><i class="devicon-java-plain colored"></i> Hibernate & JPA</div>
+                <div class="skill"><i class="devicon-java-plain colored"></i> JDBC</div>
+            </div>
+        </div>
+        <div class="skills-category">
+            <h2>Web</h2>
+            <div class="skills-container">
+                <div class="skill"><i class="devicon-html5-plain colored"></i> HTML5</div>
+                <div class="skill"><i class="devicon-css3-plain colored"></i> CSS3</div>
+                <div class="skill"><i class="devicon-bootstrap-plain colored"></i> Bootstrap</div>
+                <div class="skill"><i class="devicon-thymeleaf-plain colored"></i> Thymeleaf</div>
+            </div>
+        </div>
+        <div class="skills-category">
+            <h2>Tools & Technologies</h2>
+            <div class="skills-container">
+                <div class="skill"><i class="devicon-git-plain colored"></i> Git</div>
+                <div class="skill"><i class="devicon-maven-plain colored"></i> Maven</div>
+                <div class="skill"><i class="devicon-gradle-plain colored"></i> Gradle</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h1>Projects</h1>
+        <button id="add-project-btn">Add New Project</button>
+        <div class="project-filter">
+            <button data-filter="all">All</button>
+            <button data-filter="web">Web</button>
+            <button data-filter="design">Design</button>
+        </div>
+        <div class="projects-container" id="projects-container">
+            <div class="project" data-category="web" data-id="1">
+                <h2>Project 1</h2>
+                <p>A web app built with HTML, CSS, and JS.</p>
+                <button class="edit-btn">Edit</button>
+                <button class="delete-btn">Delete</button>
+            </div>
+            <div class="project" data-category="design" data-id="2">
+                <h2>Project 2</h2>
+                <p>A design-focused project.</p>
+                <button class="edit-btn">Edit</button>
+                <button class="delete-btn">Delete</button>
+            </div>
+        </div>
+
+        <!-- Add/Edit Project Modal -->
+        <div id="project-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span id="close-modal" class="close">×</span>
+                <h2 id="modal-title">Add Project</h2>
+                <form id="project-form">
+                    <input type="text" id="project-title" placeholder="Project Title" required>
+                    <textarea id="project-desc" placeholder="Description" required></textarea>
+                    <select id="project-category" required>
+                        <option value="web">Web</option>
+                        <option value="design">Design</option>
+                    </select>
+                    <input type="url" id="project-link" placeholder="Project Link (e.g., GitHub URL)">
+                    <input type="file" id="project-image" accept="image/*">
+                    <button type="submit" id="save-project-btn">Save</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1>Contact</h1>
+        <div class="contact-links">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="fayek222053411866@gmail.com">your.email@example.com</a>
+            </div>
+            <div class="contact-item">
+                <i class="devicon-linkedin-plain colored"></i>
+                <a href="https://www.linkedin.com/in/ajmayen-fayek/" target="_blank">LinkedIn</a>
+            </div>
+            <div class="contact-item">
+                <i class="devicon-github-plain colored"></i>
+                <a href="https://github.com/Ajmayen27" target="_blank">GitHub</a>
+            </div>
+        </div>
+        <form id="contact-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
