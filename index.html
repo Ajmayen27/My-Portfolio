@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles.css">
     <!-- Devicon for colorful logos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css">
+    <!-- Font Awesome for hamburger menu and email icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- Google Fonts: Orbitron and Montserrat -->
     <link
         href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Montserrat:wght@400;700&display=swap"
@@ -30,7 +32,10 @@
 
     <!-- Navigation -->
     <nav>
-        <ul>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -47,9 +52,11 @@
         <br>
         <p>I am a passionate software engineering student specializing in Java, with a strong focus on the Spring Boot
             framework and PostgreSQL. My journey in software development is driven by a deep enthusiasm for coding and a
-            commitment to continuous learning. I thrive on the challenge of adapting to new technologies and enjoy
-            exploring innovative solutions to complex problems. Whether working on backend systems or exploring new tech
-            stacks, I am dedicated to building efficient and scalable software.</p>
+            commitment to continuous learning. I also work on Machine Learning and research projects, where I have
+            become familiar with Python libraries such as NumPy, Pandas, Matplotlib, and Scikit-learn. I thrive on the
+            challenge of adapting to new technologies and enjoy exploring innovative solutions to complex problems.
+            Whether working on backend systems, diving into ML models, or exploring new tech stacks, I am dedicated to
+            building efficient and scalable software.</p>
     </section>
 
     <section id="skills">
@@ -59,7 +66,7 @@
             <div class="skills-container">
                 <div class="skill"><i class="devicon-java-plain colored"></i> Java</div>
                 <div class="skill"><i class="devicon-c-plain colored"></i> C</div>
-                <div class="skill"><i class="devicon-javascript-plain colored"></i> Javascript</div>
+                <div class="skill"><i class="devicon-python-plain colored"></i>Python</div>
             </div>
         </div>
         <div class="skills-category">
@@ -98,43 +105,18 @@
 
     <section id="projects">
         <h1>Projects</h1>
-        <button id="add-project-btn">Add New Project</button>
-        <div class="project-filter">
-            <button data-filter="all">All</button>
-            <button data-filter="web">Web</button>
-            <button data-filter="design">Design</button>
-        </div>
         <div class="projects-container" id="projects-container">
-            <div class="project" data-category="web" data-id="1">
-                <h2>Project 1</h2>
-                <p>A web app built with HTML, CSS, and JS.</p>
-                <button class="edit-btn">Edit</button>
-                <button class="delete-btn">Delete</button>
+            <div class="project" data-category="web" style="background-image: url('/pokemonPicGit.jpg');">
+                <h2>Project 1: Pokemon App</h2>
+                <p>A frontend application built with HTML, SCSS, TypeScript, and Angular.</p>
+                <a href="https://github.com/Ajmayen27/pokemon-app.git" target="_blank" class="project-link">View on
+                    GitHub</a>
             </div>
-            <div class="project" data-category="design" data-id="2">
-                <h2>Project 2</h2>
-                <p>A design-focused project.</p>
-                <button class="edit-btn">Edit</button>
-                <button class="delete-btn">Delete</button>
-            </div>
-        </div>
-
-        <!-- Add/Edit Project Modal -->
-        <div id="project-modal" class="modal" style="display: none;">
-            <div class="modal-content">
-                <span id="close-modal" class="close">×</span>
-                <h2 id="modal-title">Add Project</h2>
-                <form id="project-form">
-                    <input type="text" id="project-title" placeholder="Project Title" required>
-                    <textarea id="project-desc" placeholder="Description" required></textarea>
-                    <select id="project-category" required>
-                        <option value="web">Web</option>
-                        <option value="design">Design</option>
-                    </select>
-                    <input type="url" id="project-link" placeholder="Project Link (e.g., GitHub URL)">
-                    <input type="file" id="project-image" accept="image/*">
-                    <button type="submit" id="save-project-btn">Save</button>
-                </form>
+            <div class="project" data-category="design" style="background-image: url('/quizapp.png');">
+                <h2>Project 2: Spring Quiz App</h2>
+                <p>A web application built with HTML, CSS, Thymeleaf, H2 Database, Java, and Spring Boot.</p>
+                <a href="https://github.com/Ajmayen27/Spring-Quiz-App.git" target="_blank" class="project-link">View on
+                    GitHub</a>
             </div>
         </div>
     </section>
@@ -144,15 +126,18 @@
         <div class="contact-links">
             <div class="contact-item">
                 <i class="fas fa-envelope"></i>
-                <a href="fayek222053411866@gmail.com">your.email@example.com</a>
+                <a href="mailto:ajmayen@example.com">ajmayenfayek999999@gmail.com</a>
             </div>
             <div class="contact-item">
                 <i class="devicon-linkedin-plain colored"></i>
                 <a href="https://www.linkedin.com/in/ajmayen-fayek/" target="_blank">LinkedIn</a>
             </div>
             <div class="contact-item">
-                <i class="devicon-github-plain colored"></i>
+                <i class="devicon-github-plain "></i>
                 <a href="https://github.com/Ajmayen27" target="_blank">GitHub</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"> 01763111024</i>
             </div>
         </div>
         <form id="contact-form">
